@@ -47,9 +47,20 @@ const users = [
 ];
 
 users[1].email;
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser)); // can access all keys of tinderUser object
-console.log(Object.values(tinderUser)); // can access all values of tinderUser Values
-console.log(Object.entries(tinderUser)); // give each entry in different array
-console.log(tinderUser.hasOwnProperty("isLoggedIn"));
+// console.log(Object.keys(tinderUser)); // can access all keys of tinderUser object
+// console.log(Object.values(tinderUser)); // can access all values of tinderUser Values
+// console.log(Object.entries(tinderUser)); // give each entry in different array
+// console.log(tinderUser.hasOwnProperty("isLoggedIn"));
+
+// Destructuring
+
+const course = { courseName: "JS", price: "999", courseInstructor: "Hitesh" };
+// course.courseInstructor
+
+// const { courseInstructor } = course;
+// console.log(courseInstructor);
+const { courseInstructor: Instructor } = course;
+console.log(Instructor);
+
